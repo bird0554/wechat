@@ -1,2 +1,7 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class='hor'>组件测试</view>
+<button id="view" type="primary" bindtap='binddef'>View</button>
+<button id="scroll-view" type="primary" bindtap='binddef'>Scroll-view</button>
+<button id="swiper" type="primary" bindtap='binddef'>Swiper</button>
+<button id="movable-area" type="primary" bindtap='binddef'>Movable-area</button>
+<button id="cover-view" type="primary" bindtap='binddef'>Cover-view</button>

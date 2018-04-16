@@ -1,28 +1,41 @@
-// pages/my/my.js
+// pages/swiper/swiper.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 5000,
+    duration: 1000
+  },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
+    })
+  },
 
-  },
-  bindView: function () {
-    wx.navigateTo({
-      url: '../view/view',
-    })
-  },
-  bindSwiper:function(e){
-    wx.navigateTo({
-      url: '../swiper/swiper',
-    })
-  },
-  binddef:function(e){
-    var name=e.currentTarget.id;
-    wx.navigateTo({
-      url: '../'+name+'/'+name,
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

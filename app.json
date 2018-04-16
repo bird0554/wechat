@@ -5,7 +5,12 @@
     "pages/map/map",
     "pages/camera/camera",
     "pages/phone/phone",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/view/view",
+    "pages/scroll-view/scroll-view",
+    "pages/swiper/swiper",
+    "pages/movable-area/movable-area",
+    "pages/cover-view/cover-view"
   ],
   "window":{
     "backgroundTextStyle":"light",
