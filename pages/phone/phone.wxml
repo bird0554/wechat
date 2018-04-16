@@ -1,0 +1,5 @@
+<!--pages/phone/phone.wxml-->
+<view class="container">
+<input class="numbertext" type="number" bindinput="bindKeyInput" maxlength="11" placeholder="电话号码输入" auto-focus="true"/>
+</view>
+<button class="hr" type="primary" bindtap="bindPhone">拨打</button>

@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{motto+userInfo.nickName}}</text>
+
+    </block>
+    <view wx:if="{{address!=undefined}}" class='usermotto'>{{address.nation}},{{address.city}},{{address.district}}</view>
+  </view>
+  <!-- <view class=""> -->
+  <!--     
+  <view class="btn-area usermotto">
+    <button bindtap="bindMap" type="primary" hover-class="other-button-hover">点击我可以打开地图哟！</button>
+    <button class="hr"type="warn" hover-class="other-button-hover" bindtap="bindCamera">点击我可以打开照相机哟！</button>
+     <button class="hr"type="primary" hover-class="other-button-hover" bindtap="bindPhone">点击我可以打电话哟！</button>
+  </view> -->
+
+  <!-- </view> -->
+  <!-- <view class="btn-area">
+    <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
+    <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="primary"> primary </button>
+    <button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="warn"> warn </button>
+    <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+    <button bindtap="setPlain">点击设置以上按钮plain属性</button>
+    <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+    <button open-type="contact">进入客服会话</button>
+  </view> -->
+</view>

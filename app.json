@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/camera/camera",
+    "pages/phone/phone",
+    "pages/my/my"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "叶蜂的小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/index1.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/phone1.png",
+        "iconPath": "images/phone.png",
+        "pagePath": "pages/phone/phone",
+        "text": "电话"
+      },
+      {
+        "selectedIconPath": "images/map1.png",
+        "iconPath": "images/map.png",
+        "pagePath": "pages/map/map",
+        "text": "地图"
+      },
+      {
+        "selectedIconPath": "images/camera1.png",
+        "iconPath": "images/camera.png",
+        "pagePath": "pages/camera/camera",
+        "text": "相机"
+      },
+      {
+        "selectedIconPath": "images/my1.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

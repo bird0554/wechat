@@ -1,0 +1,9 @@
+/* pages/phone/phone.wxss */
+.numbertext{
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+  border: solid 1px black;
+}

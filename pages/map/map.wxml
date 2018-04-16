@@ -1,0 +1,9 @@
+<!-- map.wxml -->
+<!-- <view style="height:500px;width: 300px;border: solid 1px black;display: flex;flex-direction: row; justify-content: center; "> -->
+<view class=".map" >
+<map class=".map" id="myMap" style="height: 500px;" show-location />
+</view>
+<!-- <button type="primary" bindtap="getCenterLocation">获取位置</button> -->
+<button type="primary" bindtap="moveToLocation">获取位置</button>
+<!-- <button type="primary" bindtap="translateMarker">移动标注</button>
+<button type="primary" bindtap="includePoints">缩放视野展示所有经纬度</button> -->
